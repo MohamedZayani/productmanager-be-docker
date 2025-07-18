@@ -4,6 +4,9 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
+# ✅ Installer envsubst
+RUN apt-get update && apt-get install -y gettext
+
 # Étape 2 : Créer l'image exécutable
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
