@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "🔎 Variables d'environnement :"
-echo "MYSQLHOST=$MySQL.MYSQLHOST"
+echo "MYSQLHOST=${{MySQL.MYSQLHOST}}"
 echo "MYSQLPORT=$MYSQLPORT"
 echo "MYSQLUSER=$MYSQLUSER"
 echo "MYSQLPASSWORD=$MYSQLPASSWORD"
