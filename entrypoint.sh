@@ -1,5 +1,13 @@
 #!/bin/sh
 
+echo "🔎 Variables d'environnement :"
+echo "MYSQLHOST=$MYSQLHOST"
+echo "MYSQLPORT=$MYSQLPORT"
+echo "MYSQLUSER=$MYSQLUSER"
+echo "MYSQLPASSWORD=$MYSQLPASSWORD"
+echo "MYSQLDATABASE=$MYSQLDATABASE"
+
+
 echo "➡️ Remplacement des variables d'environnement dans application.yml..."
 envsubst < /app/config/application.template.yml > /app/config/application.yml
 
