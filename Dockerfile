@@ -11,7 +11,7 @@ COPY --from=build /app/target/productmanager-be-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 2222
 
 # Copie le template et le script
-COPY src/main/resources/application.template.yml /app/config/application.template.yml
+COPY config/application.template.yml /app/config/application.template.yml
 COPY entrypoint.sh /entrypoint.sh
 
 # Autoriser l'exécution du script
