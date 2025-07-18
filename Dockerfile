@@ -9,7 +9,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 COPY --from=build /app/target/productmanager-be-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 2222
-ENTRYPOINT ["java", "-jar", "app.jar"]
+
 # Copie le template et le script
 COPY src/main/resources/application.template.yml /app/config/application.template.yml
 COPY entrypoint.sh /entrypoint.sh
